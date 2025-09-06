@@ -1,4 +1,4 @@
-# Server-Status
+# 🖥️ Server-Stats
 
 ## Overview
 
