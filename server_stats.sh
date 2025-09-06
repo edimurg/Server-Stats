@@ -27,7 +27,7 @@ uptime-loadaverage () {
 
 		echo -n "${uptime[i]} "
 	done
-	echo -e -n "               \033[0;33mLoad average\033[0m: $loadaverage"
+	echo -e -n "        \033[0;33mLoad average\033[0m: $loadaverage"
 	echo " "
 }
 
