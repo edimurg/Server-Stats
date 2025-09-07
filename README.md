@@ -45,6 +45,8 @@ Run the tool:
 ```bash
 ./server_stats.sh 
 ```
+![](Screenshot.png)
+
 ---
 
 ## 🎬 Watch the Tool in Action
