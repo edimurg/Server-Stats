@@ -54,6 +54,8 @@ Run the tool:
 
 ---
 
+## ⚠️ Limitations
+
 ## 🤝 Contributing
 
 I'm open to suggestions, improvements, and contributions!
