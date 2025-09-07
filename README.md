@@ -11,6 +11,8 @@
 
 A lightweight, real-time system monitoring tool built entirely in Bash, designed for UNIX-like environments. It provides a comprehensive, at-a-glance summary of critical system metrics in a terminal-based dashboard with ANSI-colored visual elements for improved readability.
 
+---
+
 ## ⚡ Features
 
 - Real-time system monitoring in the terminal
@@ -20,6 +22,8 @@ A lightweight, real-time system monitoring tool built entirely in Bash, designed
 - Dynamic usage bars for quick visual insights
 - Graceful exit with terminal state restoration
 - No external dependencies — pure Bash + standard Linux tools
+
+--- 
 
 ## 🚀 Installation
 
@@ -33,12 +37,21 @@ Allow permissions:
 ```bash
 chmod +x server_stats.sh
 ```
+---
+
 ## 📝 Usage
 
 Run the tool:
 ```bash
 ./server_stats.sh 
 ```
+---
+
+## 🎬 Watch the Tool in Action
+<br>[![Demo Terminal](https://img.shields.io/badge/Demo%20Terminal-asciinema-orange?style=for-the-badge&logo=linux&logoColor=white)](https://asciinema.org/a/sSi8BASghVapfAFbZgavoeXNS)
+
+---
+
 ## 🤝 Contributing
 
 I'm open to suggestions, improvements, and contributions!
