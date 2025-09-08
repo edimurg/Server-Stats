@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# server_stats.sh
+# A resources monitoring tool
+
+# Copyright (c) 2025 Murg Mihai Eduard
+# Licensed under the MIT License
+# See LICENSE file in the project root for more information.
+
 screen_size_error_handling(){     #we need this because of how tput works, if you do not meet the minimum requirement of lines and cols the script will break
 	rows=$(tput lines)
 	cols=$(tput cols)
