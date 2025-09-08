@@ -58,6 +58,8 @@ Run the tool:
 - Terminal size: Requires at least 49 rows x 67 columns; smaller terminals show a warning.
 - Linux only.
 - Percentages are approximate due to scaling and rounding.
+
+---
   
 ## 🤝 Contributing
 
