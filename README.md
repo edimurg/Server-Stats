@@ -30,7 +30,7 @@ A lightweight, real-time system monitoring tool built entirely in Bash, designed
 Clone the repository:
 
 ```bash
-git clone https://github.com/edimurg/Server-Status.git
+git clone https://github.com/edimurg/Server-Stats.git
 ```
 Allow permissions:
 
