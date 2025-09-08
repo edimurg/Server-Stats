@@ -1,10 +1,28 @@
 #!/bin/bash
-# server_stats.sh
-# A real-time resource monitoring tool
-#
-# Copyright (c) 2025 Murg Mihai Eduard
-# Licensed under the MIT License
-# See LICENSE file in the project root for more information.
+
+screen_size_error_handling(){     #we need this because of how tput works, if you do not meet the minimum requirement of lines and cols the script will break
+	rows=$(tput lines)
+	cols=$(tput cols)
+	if [ $rows -gt 49 ] && [ $cols -gt 67 ];then
+		main
+	else
+		echo -e "\033[0;31mWarning !\033[0m\n" 
+		echo "Your terminal window is too small (You have $rows rows x $cols cols)."
+		echo "You need at least 49 rows and 67 cols."
+		echo "Check with 'tput lines' for rows and 'tput cols' for cols."
+		echo -e "Try to use fullscreen or lower your text font size.\n"
+		echo "Do you still want to continue ? (Y/n)"
+		read yes_or_no
+		if [ $yes_or_no = 'Y' ] || [ $yes_or_no = 'y' ];then
+			main
+		else 
+			clear
+			echo -e "\033[0;32m[INFO]\033[0m Exited succesfully."
+		       sleep 5
+		fi
+
+	fi
+}
 
 trap 'tput cnorm ; echo -e " \033[00m" ; stty echo ; clear ; exit 0' INT TERM EXIT   #this is to make sure that when you close the script your cursor will be back to normal, and there will be no color changes, and it will enable back your keyboard
 tput civis   #this hides your cursor
@@ -27,7 +45,7 @@ uptime-loadaverage () {
 
 		echo -n "${uptime[i]} "
 	done
-	echo -e -n "        \033[0;33mLoad average\033[0m: $loadaverage"
+	echo -e -n "      \033[0;33mLoad average\033[0m: $loadaverage"
 	echo " "
 }
 
@@ -99,6 +117,7 @@ active_processes() {  # this function will monitor top 5 processes with the most
 	echo " "
  } 
 
+main (){
 while true; do  #here we call all the functions and loop them in an infite loop
 	stty -echo  #this disables the keyboard
 	tput cup 0 0 
@@ -115,3 +134,6 @@ while true; do  #here we call all the functions and loop them in an infite loop
 	echo "Press 'CTRL + c' to exit."
 	sleep 1
 done
+}
+
+screen_size_error_handling
