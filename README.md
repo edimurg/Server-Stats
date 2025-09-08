@@ -32,6 +32,11 @@ Clone the repository:
 ```bash
 git clone https://github.com/edimurg/Server-Stats.git
 ```
+Navigate to the project directory:
+
+``` bash
+cd Server-Stats
+```
 Allow permissions:
 
 ```bash
