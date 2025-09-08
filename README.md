@@ -32,7 +32,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/edimurg/Server-Stats.git
 ```
-Navigate to the project directory:
+Navigate to the tool directory:
 
 ``` bash
 cd Server-Stats
