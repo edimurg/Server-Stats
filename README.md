@@ -21,7 +21,7 @@ A lightweight, real-time system monitoring tool built entirely in Bash, designed
 - Top 5 active processes by CPU and memory
 - Dynamic usage bars for quick visual insights
 - Graceful exit with terminal state restoration
-- No external dependencies — pure Bash + standard Linux tools
+- No external dependencies — pure Bash + standard Linux tools (top, free, df, uptime, tput, bc)
 
 --- 
 
@@ -55,7 +55,10 @@ Run the tool:
 ---
 
 ## ⚠️ Limitations
-
+- Terminal size: Requires at least 49 rows x 67 columns; smaller terminals show a warning.
+- Linux only.
+- Percentages are approximate due to scaling and rounding.
+  
 ## 🤝 Contributing
 
 I'm open to suggestions, improvements, and contributions!
